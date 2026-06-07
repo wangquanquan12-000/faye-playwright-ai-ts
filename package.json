@@ -1,0 +1,29 @@
+{
+  "name": "faye-playwright-ai-ts",
+  "version": "1.0.0",
+  "description": "RM11 (faye-test.link) AI-driven Playwright UI automation - TypeScript",
+  "scripts": {
+    "postinstall": "PLAYWRIGHT_BROWSERS_PATH=./browsers npx playwright install chromium || true",
+    "test": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test",
+    "test:headed": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test --headed",
+    "test:ui": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test --ui",
+    "test:ai": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test tests/ai/",
+    "test:seed": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test tests/seed.spec.ts",
+    "explore": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test tests/explore-site.spec.ts --project=chromium",
+    "report": "playwright show-report",
+    "init-agents": "npx playwright init-agents --loop=vscode",
+    "codegen": "playwright codegen https://faye-test.link"
+  },
+  "keywords": [
+    "playwright",
+    "ai",
+    "e2e",
+    "rm11",
+    "typescript"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "dotenv": "^17.4.2"
+  }
+}

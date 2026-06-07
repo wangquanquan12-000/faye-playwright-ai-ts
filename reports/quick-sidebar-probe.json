@@ -1,0 +1,64 @@
+{
+  "url": "https://faye-test.link/home?is_login=1",
+  "bodyHasPost": false,
+  "bodyHasPublish": true,
+  "sidebarText": "Home\nNotifications\n1\nMessages\n5\nPublish\nGet Tokens\nProfile\nConcierge Desk\nComplaint & Appeal Process\nContact Us\nLanguage",
+  "sidebarAria": "- link:\n  - /url: /home\n  - img\n- navigation:\n  - text: Home Notifications 1 Messages 5 Publish\n  - img \"token\"\n  - text: Get Tokens\n  - img \"portrait\"\n  - text: Profile\n- link \"Concierge Desk\":\n  - /url: /concierge\n- link \"Complaint & Appeal Process\":\n  - /url: /complaint-process\n- link \"Contact Us\":\n  - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n- link:\n  - /url: https://x.com/RM11official/\n- link:\n  - /url: https://www.instagram.com/rm11.official/\n- link \"TikTok\":\n  - /url: https://www.tiktok.com/@rm11.official\n  - img \"TikTok\"\n- link \"YouTube\":\n  - /url: https://www.youtube.com/@rm11official\n  - img \"YouTube\"\n- link:\n  - /url: https://clapperapp.com/RM11_official/\n- link:\n  - /url: https://t.me/+pzkdrJvULwQ3OWIx\n- text: Language",
+  "selectorResults": {
+    "nav exact Post": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    },
+    "nav role link Post": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    },
+    "nav role button Post": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    },
+    "getByText Post exact": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    },
+    "getByRole link Post": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    },
+    "getByRole button Post": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    },
+    "nav Publish exact": {
+      "count": 1,
+      "visible": true,
+      "text": "Publish"
+    },
+    "getByText Publish": {
+      "count": 1,
+      "visible": true,
+      "text": "Publish"
+    },
+    "aria-label post": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    },
+    "aria-label publish": {
+      "count": 0,
+      "visible": false,
+      "text": ""
+    }
+  },
+  "workingSelectors": [
+    "nav Publish exact",
+    "getByText Publish"
+  ],
+  "ariaFull": "- link:\n  - /url: /home\n  - img\n- navigation:\n  - text: Home Notifications 1 Messages 5 Publish\n  - img \"token\"\n  - text: Get Tokens\n  - img \"portrait\"\n  - text: Profile\n- link \"Concierge Desk\":\n  - /url: /concierge\n- link \"Complaint & Appeal Process\":\n  - /url: /complaint-process\n- link \"Contact Us\":\n  - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n- link:\n  - /url: https://x.com/RM11official/\n- link:\n  - /url: https://www.instagram.com/rm11.official/\n- link \"TikTok\":\n  - /url: https://www.tiktok.com/@rm11.official\n  - img \"TikTok\"\n- link \"YouTube\":\n  - /url: https://www.youtube.com/@rm11official\n  - img \"YouTube\"\n- link:\n  - /url: https://clapperapp.com/RM11_official/\n- link:\n  - /url: https://t.me/+pzkdrJvULwQ3OWIx\n- text: Language\n- img\n- img \"blur_url\"\n- img\n- text: \"0\"\n- img\n- text: Gift haaaaaaaa\n- paragraph: Do you want to hear my voice?\n- img \"blur_url\"\n- img\n- text: \"0\"\n- img\n- text: Gift haaaaaaaa\n- img \"blur_url\"\n- img \"blur_url\"\n- img \"blur_url\"\n- region \"Video Player\"\n- img\n- img \"Full Screen\"\n- text: Full Screen\n- img \"blur_url\"\n- img\n- img\n- img\n- img"
+}

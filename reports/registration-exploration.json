@@ -1,0 +1,36 @@
+{
+  "steps": [
+    {
+      "step": "email-sent",
+      "email": "explore_1780830288378@test.com",
+      "url": "https://faye-test.link/#step_2",
+      "aria": "- heading \"RM11\" [level=1]:\n  - text: RM11\n  - link:\n    - /url: /\n    - img\n- banner:\n  - img\n- text: What’s Your Email？ We will send you a verification code.\n- textbox \"Email\": explore_1780830288378@test.com\n- text: Please enter a valid email address\n- button \"Send Code\" [disabled]\n- contentinfo:\n  - heading \"Explore RM11\" [level=3]\n  - link \"Blog\":\n    - /url: /blog\n  - link \"Podcast\":\n    - /url: /podcast\n  - link \"Features\":\n    - /url: /about\n  - link \"Branding\":\n    - /url: /branding\n  - heading \"Legal & Privacy\" [level=3]\n  - link \"Privacy Policy\":\n    - /url: /privacy\n  - link \"Terms of Service\":\n    - /url: /terms\n  - link \"Content Moderation\":\n    - /url: /content-moderation\n  - link \"Data Retention Policy\":\n    - /url: /data-retention-policy\n  - link \"Complaint & Appeal Process\":\n    - /url: /complaint-process\n  - link \"Concierge Service Agreement\":\n    - /url: /concierge-service-agreement\n  - link \"Human Trafficking Policy\":\n    - /url: /human-trafficking-policy\n  - link \"2257 Statement / Exemption\":\n    - /url: /2257-disclosure-statement\n  - link \"Refund Policy\":\n    - /url: /refund-policy\n  - link \"Content Review and Pre-Screening\":\n    - /url: /content-review-and-pre-screening\n  - heading \"Get in Touch\" [level=3]\n  - link \"Concierge Desk\":\n    - /url: /concierge\n  - link \"YouTube Partnership\":\n    - /url: https://blog.rm11.com/partners/youtube/\n  - link \"Contact Us\":\n    - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n  - link:\n    - /url: https://x.com/RM11official/\n    - img\n  - link:\n    - /url: https://www.instagram.com/rm11.official/\n    - img\n  - link:\n    - /url: https://www.tiktok.com/@rm11.official\n    - img\n  - link:\n    - /url: https://www.youtube.com/@rm11official\n    - img\n  - link:\n    - /url: https://clapperapp.com/RM11_official/\n    - img\n  - link:\n    - /url: https://t.me/+pzkdrJvULwQ3OWIx\n  - heading \"Proud Sponsor\" [level=3]\n  - link \"Pineapple\":\n    - /url: https://pineapplesupport.org\n    - img \"Pineapple\"\n  - text: Language © 2026 RM11. All Right Reserved.\n  - link \"DMCA.com Protection Status\":\n    - /url: https://www.dmca.com/r/pdjwm41\n    - img \"DMCA.com Protection Status\""
+    },
+    {
+      "step": "after-verify",
+      "url": "https://faye-test.link/#step_2",
+      "aria": "- heading \"RM11\" [level=1]:\n  - text: RM11\n  - link:\n    - /url: /\n    - img\n- banner:\n  - img\n- text: What’s Your Email？ We will send you a verification code.\n- textbox \"Email\": \"0\"\n- button \"Send Code\"\n- contentinfo:\n  - heading \"Explore RM11\" [level=3]\n  - link \"Blog\":\n    - /url: /blog\n  - link \"Podcast\":\n    - /url: /podcast\n  - link \"Features\":\n    - /url: /about\n  - link \"Branding\":\n    - /url: /branding\n  - heading \"Legal & Privacy\" [level=3]\n  - link \"Privacy Policy\":\n    - /url: /privacy\n  - link \"Terms of Service\":\n    - /url: /terms\n  - link \"Content Moderation\":\n    - /url: /content-moderation\n  - link \"Data Retention Policy\":\n    - /url: /data-retention-policy\n  - link \"Complaint & Appeal Process\":\n    - /url: /complaint-process\n  - link \"Concierge Service Agreement\":\n    - /url: /concierge-service-agreement\n  - link \"Human Trafficking Policy\":\n    - /url: /human-trafficking-policy\n  - link \"2257 Statement / Exemption\":\n    - /url: /2257-disclosure-statement\n  - link \"Refund Policy\":\n    - /url: /refund-policy\n  - link \"Content Review and Pre-Screening\":\n    - /url: /content-review-and-pre-screening\n  - heading \"Get in Touch\" [level=3]\n  - link \"Concierge Desk\":\n    - /url: /concierge\n  - link \"YouTube Partnership\":\n    - /url: https://blog.rm11.com/partners/youtube/\n  - link \"Contact Us\":\n    - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n  - link:\n    - /url: https://x.com/RM11official/\n    - img\n  - link:\n    - /url: https://www.instagram.com/rm11.official/\n    - img\n  - link:\n    - /url: https://www.tiktok.com/@rm11.official\n    - img\n  - link:\n    - /url: https://www.youtube.com/@rm11official\n    - img\n  - link:\n    - /url: https://clapperapp.com/RM11_official/\n    - img\n  - link:\n    - /url: https://t.me/+pzkdrJvULwQ3OWIx\n  - heading \"Proud Sponsor\" [level=3]\n  - link \"Pineapple\":\n    - /url: https://pineapplesupport.org\n    - img \"Pineapple\"\n  - text: Language © 2026 RM11. All Right Reserved.\n  - link \"DMCA.com Protection Status\":\n    - /url: https://www.dmca.com/r/pdjwm41\n    - img \"DMCA.com Protection Status\""
+    },
+    {
+      "step": "form-fields",
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "placeholder": "Email",
+          "name": "",
+          "text": "",
+          "ariaLabel": null
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "name": "",
+          "text": "Send Code",
+          "ariaLabel": null
+        }
+      ],
+      "url": "https://faye-test.link/#step_2"
+    }
+  ]
+}

@@ -1,0 +1,743 @@
+{
+  "email": "UItest0607@wegrowth.dev",
+  "registration": [
+    {
+      "step": 0,
+      "name": "age-gate-dismissed",
+      "url": "https://faye-test.link/",
+      "heading": "Sign up with Email",
+      "inputs": [],
+      "buttons": [
+        {
+          "role": "button",
+          "name": "Log in",
+          "text": "Log in",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /Log in/i })"
+        },
+        {
+          "role": "button",
+          "name": "Join As Creator",
+          "text": "Join As Creator",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /Join As Creator/i })"
+        },
+        {
+          "role": "button",
+          "name": "See All Features",
+          "text": "See All Features",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /See All Features/i })"
+        },
+        {
+          "role": "button",
+          "name": "Start Earning Now",
+          "text": "Start Earning Now",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /Start Earning Now/i })"
+        },
+        {
+          "role": "button",
+          "name": "View More",
+          "text": "View More",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /View More/i })"
+        },
+        {
+          "role": "button",
+          "name": "Sign Up",
+          "text": "Sign Up",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /Sign Up/i })"
+        }
+      ],
+      "links": [
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"/\"]"
+        },
+        {
+          "role": "link",
+          "name": "Features",
+          "text": "Features",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "Blog",
+          "text": "Blog",
+          "selector": "a[href=\"/blog\"]"
+        },
+        {
+          "role": "link",
+          "name": "Press",
+          "text": "Press",
+          "selector": "a[href=\"/press\"]"
+        },
+        {
+          "role": "link",
+          "name": "Concierge",
+          "text": "Concierge",
+          "selector": "a[href=\"/concierge\"]"
+        },
+        {
+          "role": "link",
+          "name": "Podcast",
+          "text": "Podcast",
+          "selector": "a[href=\"/podcast\"]"
+        },
+        {
+          "role": "link",
+          "name": "Revenue",
+          "text": "Revenue",
+          "selector": "a[href=\"/revenue\"]"
+        },
+        {
+          "role": "link",
+          "name": "Privacy Policy",
+          "text": "Privacy Policy",
+          "selector": "a[href=\"/privacy\"]"
+        },
+        {
+          "role": "link",
+          "name": "Terms of Service",
+          "text": "Terms of Service",
+          "selector": "a[href=\"/terms\"]"
+        },
+        {
+          "role": "link",
+          "name": "HIGHEST 90/10 SPLIT You keep 90% of your earnings + referral bonuses. We only ta",
+          "text": "HIGHEST 90/10 SPLIT You keep 90% of your earnings + referral bonuses. We only ta",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "PRIVACY & SECURITY Robust encryption, DMCA protection, location and user blockin",
+          "text": "PRIVACY & SECURITY Robust encryption, DMCA protection, location and user blockin",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "FAN RETENTION No cross-promotion of other creators on the platform.",
+          "text": "FAN RETENTION No cross-promotion of other creators on the platform.",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "VIP EXPERIENCE Personalized, concierge-like support from real humans.",
+          "text": "VIP EXPERIENCE Personalized, concierge-like support from real humans.",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "REFERRAL BONUSES Earn cash by inviting creators and fans to join the platform!",
+          "text": "REFERRAL BONUSES Earn cash by inviting creators and fans to join the platform!",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "UNLIMITED WAYS TO EARN Share paid or free content, go live, video call, and conn",
+          "text": "UNLIMITED WAYS TO EARN Share paid or free content, go live, video call, and conn",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "ALL CONTENT WELCOME RM11 supports every type of creator—whether your content is ",
+          "text": "ALL CONTENT WELCOME RM11 supports every type of creator—whether your content is ",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "IMPORT CONTENT In just 3 simple steps, you can import your posts and media from ",
+          "text": "IMPORT CONTENT In just 3 simple steps, you can import your posts and media from ",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "See All Features",
+          "text": "See All Features",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "Start Earning Now",
+          "text": "Start Earning Now",
+          "selector": "a[href=\"https://rm11.pro/rm11referral\"]"
+        },
+        {
+          "role": "link",
+          "name": "\"RM11 Redefines the Creator Economy with Invitation-Only Access and Industry-Lea",
+          "text": "\"RM11 Redefines the Creator Economy with Invitation-Only Access and Industry-Lea",
+          "selector": "a[href=\"https://markets.businessinsider.com/news/stocks/rm11-redefines-the-creator-economy-with-invitation-only-access-and-industry-leading-payouts-1034126317\"]"
+        }
+      ],
+      "otherText": [
+        "LIVE",
+        "Features",
+        "Blog",
+        "Press",
+        "Concierge",
+        "Podcast",
+        "Revenue",
+        "Sign up with Google",
+        "By signing up, you agree to our Privacy Policy and Terms of Service, and confirm that you are at least 18 years old.",
+        "Already have an account? Log in",
+        "WHAT IS RM11?",
+        "RM11, pronounced ‘Room 11’, is a premium creator-first fan site with unlimited ways to earn—live stream, video calls, locked content and more!",
+        "We offer the highest payout of 90%, no restrictions, and VIP experiences. We proudly accept all creators, AI models, and OFM agencies.",
+        "Join As Creator",
+        "WHY RM11?"
+      ],
+      "proceed": "点击 I'm over 18",
+      "ariaSnapshot": "- img\n- heading \"RM11\" [level=1]:\n  - text: RM11\n  - link:\n    - /url: /\n    - img\n- list:\n  - text: Language\n  - listitem:\n    - link \"Features\":\n      - /url: /about\n  - listitem:\n    - link \"Blog\":\n      - /url: /blog\n  - listitem:\n    - link \"Press\":\n      - /url: /press\n  - listitem:\n    - link \"Concierge\":\n      - /url: /concierge\n  - listitem:\n    - link \"Podcast\":\n      - /url: /podcast\n  - listitem:\n    - link \"Revenue\":\n      - /url: /revenue\n- img\n- img\n- text: Sign up with Google\n- iframe\n- img\n- text: Sign up with Email By signing up, you agree to our\n- link \"Privacy Policy\":\n  - /url: /privacy\n- text: and\n- link \"Terms of Service\":\n  - /url: /terms\n- text: \", and confirm that you are at least 18 years old. Already have an account?\"\n- button \"Log in\"\n- heading \"WHAT IS RM11?\" [level=2]\n- paragraph: RM11, pronounced ‘Room 11’, is a premium creator-first fan site with unlimited ways to earn—live stream, video calls, locked content and more!\n- paragraph: We offer the highest payout of 90%, no restrictions, and VIP experiences. We proudly accept all creators, AI models, and OFM agencies.\n- button \"Join As Creator\"\n- heading \"WHY RM11?\" [level=2]\n- paragraph: RM11 isn’t just another fansite—it’s the ultimate fan experience platform built for individual creators, AI models, and agencies.\n- link \"HIGHEST 90/10 SPLIT You keep 90% of your earnings + referral bonuses. We only take 10%.\":\n  - /url: /about\n  - img\n  - heading \"HIGHEST 90/10 SPLIT\" [level=3]\n  - paragraph: You keep 90% of your earnings + referral bonuses. We only take 10%.\n- link \"PRIVACY & SECURITY Robust encryption, DMCA protection, location and user blocking.\":\n  - /url: /about\n  - img\n  - heading \"PRIVACY & SECURITY\" [level=3]\n  - paragraph: Robust encryption, DMCA protection, location and user blocking.\n- link \"FAN RETENTION No cross-promotion of other creators on the platform.\":\n  - /url: /about\n  - img\n  - heading \"FAN RETENTION\" [level=3]\n  - paragraph: No cross-promotion of other creators on the platform.\n- link \"VIP EXPERIENCE Personalized, concierge-like support from real humans.\":\n  - /url: /about\n  - img\n  - heading \"VIP EXPERIENCE\" [level=3]\n  - paragraph: Personalized, concierge-like support from real humans.\n- link \"REFERRAL BONUSES Earn cash by inviting creators and fans to join the platform!\":\n  - /url: /about\n  - img\n  - heading \"REFERRAL BONUSES\" [level=3]\n  - paragraph: Earn cash by inviting creators and fans to join the platform!\n- link \"UNLIMITED WAYS TO EARN Share paid or free content, go live, video call, and connect—all in one place.\":\n  - /url: /about\n  - img\n  - heading \"UNLIMITED WAYS TO EARN\" [level=3]\n  - paragraph: Share paid or free content, go live, video call, and connect—all in one place.\n- link \"ALL CONTENT WELCOME RM11 supports every type of creator—whether your content is mild or bold.\":\n  - /url: /about\n  - img\n  - heading \"ALL CONTENT WELCOME\" [level=3]\n  - paragraph: RM11 supports every type of creator—whether your content is mild or bold.\n- link \"IMPORT CONTENT In just 3 simple steps, you can import your posts and media from Onlyfans and Fansly to RM11.\":\n  - /url: /about\n  - img\n  - heading \"IMPORT CONTENT\" [level=3]\n  - paragraph: In just 3 simple steps, you can import your posts and media from Onlyfans and Fansly to RM11.\n- button \"See All Features\":\n  - link \"See All Features\":\n    - /url: /about\n- heading \"RM11 COMPARED TO THE COMPETITION\" [level=2]\n- img \"competition\"\n- img \"HIGH-END, UNMATCHED EXPERIENCE\"\n- text: HIGH-END, UNMATCHED EXPERIENCE Unlike other platforms, RM11 offers a premium, elevated space — free from the stigma of adult content — with unlimited ways to earn\n- img \"INDUSTRY-LEADING SECURITY\"\n- text: INDUSTRY-LEADING SECURITY With DMCA Protection ProTm*, SSL encryption, and real-time content theft alerts, your work is always protected\n- img \"INVITE ONLY ACCESS, ALWAYS\"\n- text: INVITE ONLY ACCESS, ALWAYS No public browsing. Fans must be invited by the creator to view their room\n- img \"CREATOR-FIRST MENTALITY\"\n- text: CREATOR-FIRST MENTALITY RM11 is proudly women-owned and operated, fostering a safer, more inclusive environment for creators THE COMPETITION Mainstream Platforms Fall Short… Often linked to adult content Standard security, no built-in content theft monitoring Open to public (anyone can browse and subscribe to creators) Largely male-owned and dominated, built for profit and not the creator\n- img \"VS\"\n- heading \"REFER CREATORS TO EARN MONEY\" [level=2]\n- text: Know a creator? Refer them and earn 5% of their income for a year — they'll also get a $50 bonus after verification!\n- link \"Start Earning Now\":\n  - /url: https://rm11.pro/rm11referral\n  - button \"Start Earning Now\"\n- img \"refer to earn\"\n- text: Give $50, Get 5% Refer creators and get 5% of their income for ONE YEAR. They will also get $50 after verification! Referral Dashboard 172 Referred Creators $1,272.00 Available Earnings\n- heading \"PERSONAL CONCIERGE FOR CREATORS\" [level=2]\n- paragraph: Our Concierge Service pairs you with real, professional human agents who actively manage and monitor your account based on your goals, preferences, and boundaries — so you can focus on creating while we handle the rest.\n- img\n- heading \"BUILT-IN SUPPORT\" [level=3]\n- paragraph: It's like having your own dedicated assistant inside RM11.\n- img\n- heading \"LIVE STREAM BOOKING\" [level=3]\n- paragraph: We handle the schedule, you handle the show.\n- img\n- heading \"1:1 CALL BOOKING\" [level=3]\n- paragraph: Our agents schedule your video calls so you don't have to.\n- img\n- heading \"CONTENT PACKAGING\" [level=3]\n- paragraph: Curate and upsell content bundles.\n- img\n- heading \"EARNING SUPPORT\" [level=3]\n- paragraph: Direct coordination to maximize your revenue.\n- img\n- heading \"Try Concierge Service for Free\" [level=3]\n- heading \"WE SUPPORT CREATORS ACROSS ALL NICHES\" [level=2]\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: INFLUENCERS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ATHLETES\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: AI MODELS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: BRANDS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ADULT\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ASMR\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: GAMERS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: PODCASTERS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: CHEFS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ARTISTS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: AUTHORS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: INFLUENCERS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ATHLETES\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: AI MODELS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: BRANDS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ADULT\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ASMR\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: GAMERS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: PODCASTERS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: CHEFS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: ARTISTS\n- list:\n  - listitem:\n    - img\n    - img\n    - paragraph: AUTHORS\n- heading \"PRESS\" [level=2]\n- link \"\\\"RM11 Redefines the Creator Economy with Invitation-Only Access and Industry-Leading Payouts\\\" BUSINESS INSIDER\":\n  - /url: https://markets.businessinsider.com/news/stocks/rm11-redefines-the-creator-economy-with-invitation-only-access-and-industry-leading-payouts-1034126317\n  - img\n  - heading \"\\\"RM11 Redefines the Creator Economy with Invitation-Only Access and Industry-Leading Payouts\\\"\" [level=3]\n  - paragraph: BUSINESS INSIDER\n- link \"\\\"RM11 Debuts RM11 Unlocked, a Bold New Podcast Featuring Candid Conversations with Guests such as Holly Madison, Perez Hilton, and More\\\" YAHOO FINANCE\":\n  - /url: https://finance.yahoo.com/news/rm11-debuts-rm11-unlocked-bold-130800716.html\n  - img\n  - heading \"\\\"RM11 Debuts RM11 Unlocked, a Bold New Podcast Featuring Candid Conversations with Guests such as Holly Madison, Perez Hilton, and More\\\"\" [level=3]\n  - paragraph: YAHOO FINANCE\n- link \"\\\"RM11 Introduces Native 1:1 Video Calls - No Links, No Apps, No Middlemen\\\" MORNINGSTAR\":\n  - /url: https://www.morningstar.com/news/pr-newswire/20250515da88564/rm11-introduces-native-11-video-calls-no-links-no-apps-no-middlemen\n  - img\n  - heading \"\\\"RM11 Introduces Native 1:1 Video Calls - No Links, No Apps, No Middlemen\\\"\" [level=3]\n  - paragraph: MORNINGSTAR\n- link \"\\\"RM11 CEO shares what content creators need to know to protect their mental health\\\" Good Morning Texas, WFAA\":\n  - /url: https://www.wfaa.com/video/entertainment/television/programs/good-morning-texas/influencer-mental-health/287-994c9ec9-9a0f-46cb-b518-656d4461b741\n  - img\n  - heading \"\\\"RM11 CEO shares what content creators need to know to protect their mental health\\\"\" [level=3]\n  - paragraph: Good Morning Texas, WFAA\n- button \"View More\":\n  - link \"View More\":\n    - /url: /press\n- heading \"REACH OUT FOR COLLABS... AND PARTNERSHIPS\" [level=2]\n- img\n- heading \"HEADQUARTERS\" [level=3]\n- paragraph: Dallas, Texas\n- link \"Email media@rm11.com\":\n  - /url: mailto:media@rm11.com\n  - img\n  - heading \"Email\" [level=3]\n  - paragraph: media@rm11.com\n- img\n- heading \"SOCIAL\" [level=3]\n- paragraph:\n  - link:\n    - /url: https://x.com/RM11official/\n    - img\n  - link:\n    - /url: https://www.instagram.com/rm11.official/\n    - img\n  - link:\n    - /url: https://www.tiktok.com/@rm11.official\n    - img\n  - link:\n    - /url: https://www.youtube.com/@rm11official\n    - img\n  - link:\n    - /url: https://clapperapp.com/RM11_official\n    - img\n  - link:\n    - /url: https://t.me/+pzkdrJvULwQ3OWIx\n- heading \"JOIN RM11\" [level=2]\n- text: Unlock a world of interactive experiences and connect with your followers like never before.\n- button \"Sign Up\"\n- heading \"Explore RM11\" [level=3]\n- link \"Blog\":\n  - /url: /blog\n- link \"Podcast\":\n  - /url: /podcast\n- link \"Features\":\n  - /url: /about\n- link \"Branding\":\n  - /url: /branding\n- heading \"Legal & Privacy\" [level=3]\n- link \"Privacy Policy\":\n  - /url: /privacy\n- link \"Terms of Service\":\n  - /url: /terms\n- link \"Content Moderation\":\n  - /url: /content-moderation\n- link \"Data Retention Policy\":\n  - /url: /data-retention-policy\n- link \"Complaint & Appeal Process\":\n  - /url: /complaint-process\n- link \"Concierge Service Agreement\":\n  - /url: /concierge-service-agreement\n- link \"Human Trafficking Policy\":\n  - /url: /human-trafficking-policy\n- link \"2257 Statement / Exemption\":\n  - /url: /2257-disclosure-statement\n- link \"Refund Policy\":\n  - /url: /refund-policy\n- link \"Content Review and Pre-Screening\":\n  - /url: /content-review-and-pre-screening\n- heading \"Get in Touch\" [level=3]\n- link \"Concierge Desk\":\n  - /url: /concierge\n- link \"YouTube Partnership\":\n  - /url: https://blog.rm11.com/partners/youtube/\n- link \"Contact Us\":\n  - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n- link:\n  - /url: https://x.com/RM11official/\n  - img\n- link:\n  - /url: https://www.instagram.com/rm11.official/\n  - img\n- link:\n  - /url: https://www.tiktok.com/@rm11.official\n  - img\n- link:\n  - /url: https://www.youtube.com/@rm11official\n  - img\n- link:\n  - /url: https://clapperapp.com/RM11_official/\n  - img\n- link:\n  - /url: https://t.me/+pzkdrJvULwQ3OWIx\n- heading \"Proud Sponsor\" [level=3]\n- link \"Pineapple\":\n  - /url: https://pineapplesupport.org\n  - img \"Pineapple\"\n- text: Language © 2026 RM11. All Right Reserved.\n- link \"DMCA.com Protection Status\":\n  - /url: https://www.dmca.com/r/pdjwm41\n  - img \"DMCA.com Protection Status\"",
+      "screenshot": "viewer-onboard-00-age-gate-dismissed.png"
+    },
+    {
+      "step": 1,
+      "name": "email-entry",
+      "url": "https://faye-test.link/#step_2",
+      "hash": "#step_2",
+      "heading": "What’s Your Email？",
+      "description": "We will send you a verification code.",
+      "inputs": [
+        {
+          "role": "textbox",
+          "placeholder": "Email",
+          "type": "email",
+          "selector": "input[placeholder=\"Email\"]"
+        }
+      ],
+      "buttons": [
+        {
+          "role": "button",
+          "name": "Send Code",
+          "text": "Send Code",
+          "disabled": true,
+          "selector": "getByRole('button', { name: /Send Code/i })"
+        }
+      ],
+      "links": [
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"/\"]"
+        },
+        {
+          "role": "link",
+          "name": "Blog",
+          "text": "Blog",
+          "selector": "a[href=\"/blog\"]"
+        },
+        {
+          "role": "link",
+          "name": "Podcast",
+          "text": "Podcast",
+          "selector": "a[href=\"/podcast\"]"
+        },
+        {
+          "role": "link",
+          "name": "Features",
+          "text": "Features",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "Branding",
+          "text": "Branding",
+          "selector": "a[href=\"/branding\"]"
+        },
+        {
+          "role": "link",
+          "name": "Privacy Policy",
+          "text": "Privacy Policy",
+          "selector": "a[href=\"/privacy\"]"
+        },
+        {
+          "role": "link",
+          "name": "Terms of Service",
+          "text": "Terms of Service",
+          "selector": "a[href=\"/terms\"]"
+        },
+        {
+          "role": "link",
+          "name": "Content Moderation",
+          "text": "Content Moderation",
+          "selector": "a[href=\"/content-moderation\"]"
+        },
+        {
+          "role": "link",
+          "name": "Data Retention Policy",
+          "text": "Data Retention Policy",
+          "selector": "a[href=\"/data-retention-policy\"]"
+        },
+        {
+          "role": "link",
+          "name": "Complaint & Appeal Process",
+          "text": "Complaint & Appeal Process",
+          "selector": "a[href=\"/complaint-process\"]"
+        },
+        {
+          "role": "link",
+          "name": "Concierge Service Agreement",
+          "text": "Concierge Service Agreement",
+          "selector": "a[href=\"/concierge-service-agreement\"]"
+        },
+        {
+          "role": "link",
+          "name": "Human Trafficking Policy",
+          "text": "Human Trafficking Policy",
+          "selector": "a[href=\"/human-trafficking-policy\"]"
+        },
+        {
+          "role": "link",
+          "name": "2257 Statement / Exemption",
+          "text": "2257 Statement / Exemption",
+          "selector": "a[href=\"/2257-disclosure-statement\"]"
+        },
+        {
+          "role": "link",
+          "name": "Refund Policy",
+          "text": "Refund Policy",
+          "selector": "a[href=\"/refund-policy\"]"
+        },
+        {
+          "role": "link",
+          "name": "Content Review and Pre-Screening",
+          "text": "Content Review and Pre-Screening",
+          "selector": "a[href=\"/content-review-and-pre-screening\"]"
+        },
+        {
+          "role": "link",
+          "name": "Concierge Desk",
+          "text": "Concierge Desk",
+          "selector": "a[href=\"/concierge\"]"
+        },
+        {
+          "role": "link",
+          "name": "YouTube Partnership",
+          "text": "YouTube Partnership",
+          "selector": "a[href=\"https://blog.rm11.com/partners/youtube/\"]"
+        },
+        {
+          "role": "link",
+          "name": "Contact Us",
+          "text": "Contact Us",
+          "selector": "a[href=\"https://rm11.zendesk.com/hc/en-us/requests/new\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://x.com/RM11official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.instagram.com/rm11.official/\"]"
+        }
+      ],
+      "otherText": [
+        "LIVE",
+        "Send Code",
+        "Explore RM11",
+        "Blog",
+        "Podcast",
+        "Features",
+        "Branding",
+        "Legal & Privacy",
+        "Privacy Policy",
+        "Terms of Service",
+        "Content Moderation",
+        "Data Retention Policy",
+        "Complaint & Appeal Process",
+        "Concierge Service Agreement",
+        "Human Trafficking Policy"
+      ],
+      "proceed": "填写邮箱并点击 Send Code",
+      "ariaSnapshot": "- heading \"RM11\" [level=1]:\n  - text: RM11\n  - link:\n    - /url: /\n    - img\n- banner:\n  - img\n- text: What’s Your Email？ We will send you a verification code.\n- textbox \"Email\"\n- button \"Send Code\" [disabled]\n- contentinfo:\n  - heading \"Explore RM11\" [level=3]\n  - link \"Blog\":\n    - /url: /blog\n  - link \"Podcast\":\n    - /url: /podcast\n  - link \"Features\":\n    - /url: /about\n  - link \"Branding\":\n    - /url: /branding\n  - heading \"Legal & Privacy\" [level=3]\n  - link \"Privacy Policy\":\n    - /url: /privacy\n  - link \"Terms of Service\":\n    - /url: /terms\n  - link \"Content Moderation\":\n    - /url: /content-moderation\n  - link \"Data Retention Policy\":\n    - /url: /data-retention-policy\n  - link \"Complaint & Appeal Process\":\n    - /url: /complaint-process\n  - link \"Concierge Service Agreement\":\n    - /url: /concierge-service-agreement\n  - link \"Human Trafficking Policy\":\n    - /url: /human-trafficking-policy\n  - link \"2257 Statement / Exemption\":\n    - /url: /2257-disclosure-statement\n  - link \"Refund Policy\":\n    - /url: /refund-policy\n  - link \"Content Review and Pre-Screening\":\n    - /url: /content-review-and-pre-screening\n  - heading \"Get in Touch\" [level=3]\n  - link \"Concierge Desk\":\n    - /url: /concierge\n  - link \"YouTube Partnership\":\n    - /url: https://blog.rm11.com/partners/youtube/\n  - link \"Contact Us\":\n    - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n  - link:\n    - /url: https://x.com/RM11official/\n    - img\n  - link:\n    - /url: https://www.instagram.com/rm11.official/\n    - img\n  - link:\n    - /url: https://www.tiktok.com/@rm11.official\n    - img\n  - link:\n    - /url: https://www.youtube.com/@rm11official\n    - img\n  - link:\n    - /url: https://clapperapp.com/RM11_official/\n    - img\n  - link:\n    - /url: https://t.me/+pzkdrJvULwQ3OWIx\n  - heading \"Proud Sponsor\" [level=3]\n  - link \"Pineapple\":\n    - /url: https://pineapplesupport.org\n    - img \"Pineapple\"\n  - text: Language © 2026 RM11. All Right Reserved.\n  - link \"DMCA.com Protection Status\":\n    - /url: https://www.dmca.com/r/pdjwm41\n    - img \"DMCA.com Protection Status\"",
+      "screenshot": "viewer-onboard-01-email-entry.png"
+    },
+    {
+      "step": 2,
+      "name": "code-entry",
+      "url": "https://faye-test.link/#step_3",
+      "hash": "#step_3",
+      "heading": "What's Your Verification Code?",
+      "description": "Your code was sent to UItest0607@wegrowth.dev.",
+      "inputs": [
+        {
+          "role": "textbox",
+          "type": "tel"
+        },
+        {
+          "role": "textbox",
+          "type": "tel"
+        },
+        {
+          "role": "textbox",
+          "type": "tel"
+        },
+        {
+          "role": "textbox",
+          "type": "tel"
+        }
+      ],
+      "buttons": [
+        {
+          "role": "button",
+          "name": "Next",
+          "text": "Next",
+          "disabled": true,
+          "selector": "getByRole('button', { name: /Next/i })"
+        }
+      ],
+      "links": [
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"/\"]"
+        },
+        {
+          "role": "link",
+          "name": "Blog",
+          "text": "Blog",
+          "selector": "a[href=\"/blog\"]"
+        },
+        {
+          "role": "link",
+          "name": "Podcast",
+          "text": "Podcast",
+          "selector": "a[href=\"/podcast\"]"
+        },
+        {
+          "role": "link",
+          "name": "Features",
+          "text": "Features",
+          "selector": "a[href=\"/about\"]"
+        },
+        {
+          "role": "link",
+          "name": "Branding",
+          "text": "Branding",
+          "selector": "a[href=\"/branding\"]"
+        },
+        {
+          "role": "link",
+          "name": "Privacy Policy",
+          "text": "Privacy Policy",
+          "selector": "a[href=\"/privacy\"]"
+        },
+        {
+          "role": "link",
+          "name": "Terms of Service",
+          "text": "Terms of Service",
+          "selector": "a[href=\"/terms\"]"
+        },
+        {
+          "role": "link",
+          "name": "Content Moderation",
+          "text": "Content Moderation",
+          "selector": "a[href=\"/content-moderation\"]"
+        },
+        {
+          "role": "link",
+          "name": "Data Retention Policy",
+          "text": "Data Retention Policy",
+          "selector": "a[href=\"/data-retention-policy\"]"
+        },
+        {
+          "role": "link",
+          "name": "Complaint & Appeal Process",
+          "text": "Complaint & Appeal Process",
+          "selector": "a[href=\"/complaint-process\"]"
+        },
+        {
+          "role": "link",
+          "name": "Concierge Service Agreement",
+          "text": "Concierge Service Agreement",
+          "selector": "a[href=\"/concierge-service-agreement\"]"
+        },
+        {
+          "role": "link",
+          "name": "Human Trafficking Policy",
+          "text": "Human Trafficking Policy",
+          "selector": "a[href=\"/human-trafficking-policy\"]"
+        },
+        {
+          "role": "link",
+          "name": "2257 Statement / Exemption",
+          "text": "2257 Statement / Exemption",
+          "selector": "a[href=\"/2257-disclosure-statement\"]"
+        },
+        {
+          "role": "link",
+          "name": "Refund Policy",
+          "text": "Refund Policy",
+          "selector": "a[href=\"/refund-policy\"]"
+        },
+        {
+          "role": "link",
+          "name": "Content Review and Pre-Screening",
+          "text": "Content Review and Pre-Screening",
+          "selector": "a[href=\"/content-review-and-pre-screening\"]"
+        },
+        {
+          "role": "link",
+          "name": "Concierge Desk",
+          "text": "Concierge Desk",
+          "selector": "a[href=\"/concierge\"]"
+        },
+        {
+          "role": "link",
+          "name": "YouTube Partnership",
+          "text": "YouTube Partnership",
+          "selector": "a[href=\"https://blog.rm11.com/partners/youtube/\"]"
+        },
+        {
+          "role": "link",
+          "name": "Contact Us",
+          "text": "Contact Us",
+          "selector": "a[href=\"https://rm11.zendesk.com/hc/en-us/requests/new\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://x.com/RM11official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.instagram.com/rm11.official/\"]"
+        }
+      ],
+      "otherText": [
+        "LIVE",
+        "Next",
+        "Resend Code in 58s",
+        "Explore RM11",
+        "Blog",
+        "Podcast",
+        "Features",
+        "Branding",
+        "Legal & Privacy",
+        "Privacy Policy",
+        "Terms of Service",
+        "Content Moderation",
+        "Data Retention Policy",
+        "Complaint & Appeal Process",
+        "Concierge Service Agreement"
+      ],
+      "proceed": "填写 4 位验证码 0124，点击 Next",
+      "ariaSnapshot": "- heading \"RM11\" [level=1]:\n  - text: RM11\n  - link:\n    - /url: /\n    - img\n- banner:\n  - img\n  - img\n- text: What's Your Verification Code? Your code was sent to UItest0607@wegrowth.dev.\n- textbox\n- textbox\n- textbox\n- textbox\n- button \"Next\" [disabled]\n- text: Resend Code in 57s\n- contentinfo:\n  - heading \"Explore RM11\" [level=3]\n  - link \"Blog\":\n    - /url: /blog\n  - link \"Podcast\":\n    - /url: /podcast\n  - link \"Features\":\n    - /url: /about\n  - link \"Branding\":\n    - /url: /branding\n  - heading \"Legal & Privacy\" [level=3]\n  - link \"Privacy Policy\":\n    - /url: /privacy\n  - link \"Terms of Service\":\n    - /url: /terms\n  - link \"Content Moderation\":\n    - /url: /content-moderation\n  - link \"Data Retention Policy\":\n    - /url: /data-retention-policy\n  - link \"Complaint & Appeal Process\":\n    - /url: /complaint-process\n  - link \"Concierge Service Agreement\":\n    - /url: /concierge-service-agreement\n  - link \"Human Trafficking Policy\":\n    - /url: /human-trafficking-policy\n  - link \"2257 Statement / Exemption\":\n    - /url: /2257-disclosure-statement\n  - link \"Refund Policy\":\n    - /url: /refund-policy\n  - link \"Content Review and Pre-Screening\":\n    - /url: /content-review-and-pre-screening\n  - heading \"Get in Touch\" [level=3]\n  - link \"Concierge Desk\":\n    - /url: /concierge\n  - link \"YouTube Partnership\":\n    - /url: https://blog.rm11.com/partners/youtube/\n  - link \"Contact Us\":\n    - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n  - link:\n    - /url: https://x.com/RM11official/\n    - img\n  - link:\n    - /url: https://www.instagram.com/rm11.official/\n    - img\n  - link:\n    - /url: https://www.tiktok.com/@rm11.official\n    - img\n  - link:\n    - /url: https://www.youtube.com/@rm11official\n    - img\n  - link:\n    - /url: https://clapperapp.com/RM11_official/\n    - img\n  - link:\n    - /url: https://t.me/+pzkdrJvULwQ3OWIx\n  - heading \"Proud Sponsor\" [level=3]\n  - link \"Pineapple\":\n    - /url: https://pineapplesupport.org\n    - img \"Pineapple\"\n  - text: Language © 2026 RM11. All Right Reserved.\n  - link \"DMCA.com Protection Status\":\n    - /url: https://www.dmca.com/r/pdjwm41\n    - img \"DMCA.com Protection Status\"",
+      "screenshot": "viewer-onboard-02-code-entry.png"
+    },
+    {
+      "step": 3,
+      "name": "after-verify",
+      "url": "https://faye-test.link/home?is_login=1",
+      "heading": "Publish",
+      "inputs": [],
+      "buttons": [
+        {
+          "role": "button",
+          "name": "Allow",
+          "text": "Allow",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /Allow/i })"
+        }
+      ],
+      "links": [
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"/home\"]"
+        },
+        {
+          "role": "link",
+          "name": "Concierge Desk",
+          "text": "Concierge Desk",
+          "selector": "a[href=\"/concierge\"]"
+        },
+        {
+          "role": "link",
+          "name": "Complaint & Appeal Process",
+          "text": "Complaint & Appeal Process",
+          "selector": "a[href=\"/complaint-process\"]"
+        },
+        {
+          "role": "link",
+          "name": "Contact Us",
+          "text": "Contact Us",
+          "selector": "a[href=\"https://rm11.zendesk.com/hc/en-us/requests/new\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://x.com/RM11official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.instagram.com/rm11.official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.tiktok.com/@rm11.official\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.youtube.com/@rm11official\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://clapperapp.com/RM11_official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://t.me/+pzkdrJvULwQ3OWIx\"]"
+        }
+      ],
+      "otherText": [
+        "LIVE",
+        "Become a Host: Create & Earn",
+        "Get Tokens",
+        "Concierge Desk",
+        "Complaint & Appeal Process",
+        "Contact Us",
+        "Gift",
+        "RM_____11",
+        "Chat",
+        "Gift",
+        "RM_____11",
+        "Chat",
+        "Unlock to view",
+        "Unlock for 10 Tokens",
+        "Allow Push Notifications?"
+      ],
+      "proceed": "验证码提交后首屏 onboarding",
+      "ariaSnapshot": "- link:\n  - /url: /home\n  - img\n- navigation:\n  - text: \"Home Notifications Messages Publish Become a Host: Create & Earn\"\n  - img \"token\"\n  - text: Get Tokens\n  - img \"portrait\"\n  - text: Profile\n- link \"Concierge Desk\":\n  - /url: /concierge\n- link \"Complaint & Appeal Process\":\n  - /url: /complaint-process\n- link \"Contact Us\":\n  - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n- link:\n  - /url: https://x.com/RM11official/\n- link:\n  - /url: https://www.instagram.com/rm11.official/\n- link \"TikTok\":\n  - /url: https://www.tiktok.com/@rm11.official\n  - img \"TikTok\"\n- link \"YouTube\":\n  - /url: https://www.youtube.com/@rm11official\n  - img \"YouTube\"\n- link:\n  - /url: https://clapperapp.com/RM11_official/\n- link:\n  - /url: https://t.me/+pzkdrJvULwQ3OWIx\n- text: Language\n- img\n- img\n- img\n- img\n- text: \"1\"\n- img\n- text: Gift RM_____11 Chat\n- img\n- img\n- text: \"3\"\n- img\n- text: Gift RM_____11 Chat\n- img\n- img\n- text: 2 Unlock to view\n- img\n- text: Unlock for 10 Tokens\n- img\n- img\n- img\n- img\n- img\n- img\n- img\n- img\n- text: Allow Push Notifications? Turn on notifications to know right away when people interact with you.\n- button \"Allow\"",
+      "screenshot": "viewer-onboard-03-after-verify.png"
+    },
+    {
+      "step": 4,
+      "name": "Publish",
+      "url": "https://faye-test.link/home?is_login=1",
+      "heading": "Publish",
+      "inputs": [],
+      "buttons": [
+        {
+          "role": "button",
+          "name": "Allow",
+          "text": "Allow",
+          "disabled": false,
+          "selector": "getByRole('button', { name: /Allow/i })"
+        }
+      ],
+      "links": [
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"/home\"]"
+        },
+        {
+          "role": "link",
+          "name": "Concierge Desk",
+          "text": "Concierge Desk",
+          "selector": "a[href=\"/concierge\"]"
+        },
+        {
+          "role": "link",
+          "name": "Complaint & Appeal Process",
+          "text": "Complaint & Appeal Process",
+          "selector": "a[href=\"/complaint-process\"]"
+        },
+        {
+          "role": "link",
+          "name": "Contact Us",
+          "text": "Contact Us",
+          "selector": "a[href=\"https://rm11.zendesk.com/hc/en-us/requests/new\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://x.com/RM11official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.instagram.com/rm11.official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.tiktok.com/@rm11.official\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://www.youtube.com/@rm11official\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://clapperapp.com/RM11_official/\"]"
+        },
+        {
+          "role": "link",
+          "name": "",
+          "text": "",
+          "selector": "a[href=\"https://t.me/+pzkdrJvULwQ3OWIx\"]"
+        }
+      ],
+      "otherText": [
+        "LIVE",
+        "Become a Host: Create & Earn",
+        "Get Tokens",
+        "Concierge Desk",
+        "Complaint & Appeal Process",
+        "Contact Us",
+        "Gift",
+        "RM_____11",
+        "Chat",
+        "Gift",
+        "RM_____11",
+        "Chat",
+        "Unlock to view",
+        "Unlock for 10 Tokens",
+        "Allow Push Notifications?"
+      ],
+      "proceed": "见 proceed 字段",
+      "ariaSnapshot": "- link:\n  - /url: /home\n  - img\n- navigation:\n  - text: Home Notifications Messages Publish\n  - img \"token\"\n  - text: Get Tokens\n  - img \"portrait\"\n  - text: Profile\n- link \"Concierge Desk\":\n  - /url: /concierge\n- link \"Complaint & Appeal Process\":\n  - /url: /complaint-process\n- link \"Contact Us\":\n  - /url: https://rm11.zendesk.com/hc/en-us/requests/new\n- link:\n  - /url: https://x.com/RM11official/\n- link:\n  - /url: https://www.instagram.com/rm11.official/\n- link \"TikTok\":\n  - /url: https://www.tiktok.com/@rm11.official\n  - img \"TikTok\"\n- link \"YouTube\":\n  - /url: https://www.youtube.com/@rm11official\n  - img \"YouTube\"\n- link:\n  - /url: https://clapperapp.com/RM11_official/\n- link:\n  - /url: https://t.me/+pzkdrJvULwQ3OWIx\n- text: Language\n- img\n- img\n- img\n- img\n- text: \"1\"\n- img\n- text: Gift RM_____11 Chat\n- img\n- img\n- text: \"3\"\n- img\n- text: Gift RM_____11 Chat\n- img\n- img\n- text: 2 Unlock to view\n- img\n- text: Unlock for 10 Tokens\n- img\n- img\n- img\n- img\n- img\n- img\n- img\n- img\n- text: Allow Push Notifications? Turn on notifications to know right away when people interact with you.\n- button \"Allow\"",
+      "screenshot": "viewer-onboard-04-publish.png"
+    }
+  ],
+  "postStep2": [],
+  "completed": true,
+  "notes": [
+    "注册完成于 step 4, url=https://faye-test.link/home?is_login=1"
+  ]
+}
