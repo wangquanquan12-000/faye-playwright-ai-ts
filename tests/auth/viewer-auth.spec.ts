@@ -1,28 +1,37 @@
+import fs from 'fs';
 import { test, expect } from '@playwright/test';
-import { loginWithEmail, registerViewer } from '../../src/helpers/auth';
+import { authStoragePath, registerViewer, saveAuthStorage } from '../../src/helpers/auth';
 import { generateViewerEmail } from '../../src/fixtures/test-data';
 
 let registeredViewerEmail = '';
+const viewerSessionFile = authStoragePath('viewer-session');
 
 test.describe.serial('Viewer 登录注册', () => {
   test('AUTH-02 Viewer Email 注册主流程', async ({ page }) => {
     test.setTimeout(120_000);
-    registeredViewerEmail = generateViewerEmail();
+    if (fs.existsSync(viewerSessionFile)) fs.unlinkSync(viewerSessionFile);
 
+    registeredViewerEmail = generateViewerEmail();
     await registerViewer(page, registeredViewerEmail);
+    await saveAuthStorage(page, 'viewer-session');
 
     await expect(page).toHaveURL(/\/home/);
     await expect(page.locator('nav').getByText('Home', { exact: true })).toBeVisible({ timeout: 15_000 });
   });
 
-  test('AUTH-03 Viewer Email 登录主流程', async ({ page }) => {
-    test.setTimeout(90_000);
-    expect(registeredViewerEmail).toBeTruthy();
+  test.describe(() => {
+    test.use({ storageState: viewerSessionFile });
 
-    await loginWithEmail(page, registeredViewerEmail);
+    test('AUTH-03 Viewer 登录态校验（复用注册会话，无需再次发验证码）', async ({ page }) => {
+      test.setTimeout(60_000);
+      expect(registeredViewerEmail).toBeTruthy();
 
-    await expect(page).toHaveURL(/\/home/);
-    await expect(page).toHaveTitle(/RM11/i);
-    await expect(page.locator('nav').getByText('Profile', { exact: true })).toBeVisible({ timeout: 15_000 });
+      await page.goto('/home');
+      await page.waitForLoadState('networkidle');
+
+      await expect(page).toHaveURL(/\/home/);
+      await expect(page).toHaveTitle(/RM11/i);
+      await expect(page.locator('nav').getByText('Profile', { exact: true })).toBeVisible({ timeout: 15_000 });
+    });
   });
 });

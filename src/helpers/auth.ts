@@ -1,13 +1,75 @@
+import fs from 'fs';
+import path from 'path';
 import type { Page } from '@playwright/test';
 import { testData } from '../fixtures/test-data';
 
+/**
+ * 登录/注册流程辅助函数。
+ * 业务用例请使用 creatorTest fixture：每次执行前自动清缓存并重新登录。
+ */
+
 const CODE = testData.verificationCode;
+const AUTH_DIR = path.join(process.cwd(), '.auth');
+
+export function authStoragePath(role: string): string {
+  return path.join(AUTH_DIR, `${role}.json`);
+}
+
+export async function saveAuthStorage(page: Page, role: string): Promise<string> {
+  const file = authStoragePath(role);
+  fs.mkdirSync(AUTH_DIR, { recursive: true });
+  await page.context().storageState({ path: file });
+  return file;
+}
+
+/** 删除本地缓存的登录态文件 */
+export function clearAuthStorage(role: string): void {
+  const file = authStoragePath(role);
+  if (fs.existsSync(file)) fs.unlinkSync(file);
+}
+
+/** 清除浏览器 cookies / storage，并重新确认 18+，确保从干净会话开始 */
+export async function resetBrowserSession(page: Page): Promise<void> {
+  await page.context().clearCookies();
+  await page.goto('/');
+  await page.evaluate(() => {
+    localStorage.clear();
+    sessionStorage.clear();
+  });
+  // 清空 storage 后重新打开首页，与 age-gate 用例保持同一加载路径
+  await page.goto('/');
+  await page.waitForLoadState('domcontentloaded');
+  await dismissAgeGate(page);
+  await page
+    .getByRole('button', { name: /^log in$/i })
+    .first()
+    .waitFor({ state: 'visible', timeout: 15_000 });
+}
+
+export async function isLoggedInHome(page: Page): Promise<boolean> {
+  return page
+    .locator('nav')
+    .getByText(/^(Home|Publish|Post)$/i)
+    .first()
+    .isVisible({ timeout: 5000 })
+    .catch(() => false);
+}
+
+async function waitForHomeSidebar(page: Page): Promise<void> {
+  await page.waitForLoadState('networkidle');
+  await page
+    .locator('nav')
+    .getByText(/^(Home|Publish|Post)$/i)
+    .first()
+    .waitFor({ state: 'visible', timeout: 30_000 });
+}
 
 export async function dismissAgeGate(page: Page): Promise<void> {
-  const over18 = page
-    .getByText(/i'?m over 18/i)
-    .or(page.getByRole('button', { name: /over 18/i }));
-  if (await over18.first().isVisible({ timeout: 10_000 }).catch(() => false)) {
+  const over18 = page.getByRole('button', { name: /over\s*18/i });
+  for (let i = 0; i < 5; i++) {
+    if (!(await over18.first().isVisible({ timeout: 3000 }).catch(() => false))) {
+      return;
+    }
     await over18.first().click({ force: true });
     await page.waitForTimeout(1500);
   }
@@ -156,14 +218,30 @@ export async function openSignUpModal(page: Page): Promise<void> {
 }
 
 export async function openLoginModal(page: Page): Promise<void> {
-  await page.goto('/');
-  await dismissAgeGate(page);
-
   const loginEmail = page.getByText('Log in with Email', { exact: true }).first();
-  if (!(await loginEmail.isVisible({ timeout: 3000 }).catch(() => false))) {
-    await page.getByRole('button', { name: /^log in$/i }).first().click({ force: true });
-    await page.waitForTimeout(1500);
+
+  if (!(await loginEmail.isVisible({ timeout: 2000 }).catch(() => false))) {
+    const { pathname } = new URL(page.url());
+    if (pathname !== '/') {
+      await page.goto('/');
+    }
+    await dismissAgeGate(page);
+    await page.waitForLoadState('domcontentloaded');
   }
+
+  for (let attempt = 0; attempt < 5; attempt++) {
+    if (await loginEmail.isVisible({ timeout: 2000 }).catch(() => false)) break;
+
+    await dismissAgeGate(page);
+    const loginBtn = page.getByRole('button', { name: /^log in$/i }).first();
+    await loginBtn.waitFor({ state: 'visible', timeout: 10_000 });
+    await loginBtn.scrollIntoViewIfNeeded();
+    await loginBtn.click({ force: true });
+    await page.waitForTimeout(2000);
+    await dismissAgeGate(page);
+  }
+
+  await dismissAgeGate(page);
   await loginEmail.waitFor({ state: 'visible', timeout: 15_000 });
 }
 
@@ -190,4 +268,26 @@ export async function loginWithEmail(page: Page, email: string): Promise<void> {
 
 export async function loginAsCreator(page: Page): Promise<void> {
   await loginWithEmail(page, testData.creator.email);
+}
+
+/**
+ * 确保 Creator 已登录并停留在首页。
+ * 每次执行前强制清除缓存与会话，重新确认 18+ 并登录，获取新 token 供本次用例使用。
+ */
+export async function ensureCreatorAuthenticated(page: Page): Promise<void> {
+  clearAuthStorage('creator');
+  await resetBrowserSession(page);
+
+  await loginAsCreator(page);
+  await saveAuthStorage(page, 'creator');
+
+  await page.goto('/home');
+  await dismissAgeGate(page);
+  await dismissPushNotification(page);
+  await waitForHomeSidebar(page);
+}
+
+/** @deprecated 请使用 ensureCreatorAuthenticated */
+export async function gotoAuthenticatedHome(page: Page): Promise<void> {
+  await ensureCreatorAuthenticated(page);
 }

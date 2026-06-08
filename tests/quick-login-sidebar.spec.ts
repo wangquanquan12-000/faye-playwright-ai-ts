@@ -1,15 +1,11 @@
-import { test } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
-import { loginWithEmail } from '../src/helpers/auth';
+import { creatorTest as test } from '../src/fixtures/auth-fixture';
 
 const OUT = path.join(process.cwd(), 'reports', 'quick-sidebar-probe.json');
 
 test('login + sidebar probe', async ({ page }) => {
   test.setTimeout(120_000);
-  await loginWithEmail(page, 'haaaaaaaa@wegrowth.dev');
-  await page.waitForTimeout(2000);
-
   const ariaFull = await page.locator('body').ariaSnapshot();
 
   const nav = page.locator('nav').first();
