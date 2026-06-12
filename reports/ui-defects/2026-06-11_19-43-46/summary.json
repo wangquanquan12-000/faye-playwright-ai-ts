@@ -1,0 +1,31 @@
+{
+  "runStamp": "2026-06-11_19-43-46",
+  "startedAt": "2026-06-11T11:44:01.714Z",
+  "scenes": {
+    "publish-form": {
+      "testTitle": "UI-POST 发帖三页视觉走查",
+      "status": "PASSED",
+      "defectCount": 0,
+      "checkedAt": "2026-06-11T11:44:01.714Z"
+    },
+    "post-details": {
+      "testTitle": "UI-POST 发帖三页视觉走查",
+      "status": "PASSED",
+      "defectCount": 0,
+      "checkedAt": "2026-06-11T11:44:25.099Z"
+    },
+    "post-success": {
+      "testTitle": "UI-POST 发帖三页视觉走查",
+      "status": "PASSED",
+      "defectCount": 0,
+      "checkedAt": "2026-06-11T11:44:32.420Z"
+    },
+    "home-sidebar": {
+      "testTitle": "UI-POST-04 Home 侧栏",
+      "status": "PASSED",
+      "defectCount": 0,
+      "checkedAt": "2026-06-11T11:44:47.140Z"
+    }
+  },
+  "updatedAt": "2026-06-11T11:44:47.140Z"
+}

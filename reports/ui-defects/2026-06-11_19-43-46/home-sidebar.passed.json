@@ -1,0 +1,69 @@
+{
+  "scene": "home-sidebar",
+  "testTitle": "UI-POST-04 Home 侧栏",
+  "status": "PASSED",
+  "checkedAt": "2026-06-11T11:44:47.139Z",
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "element": "页面背景",
+      "check": "颜色",
+      "expected": "Grey_01（#0D0D0D）",
+      "actual": "rgb(13, 13, 13)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "底部导航 Home 入口",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "底部导航 Notifications 入口",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "底部导航 Post 入口",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "底部导航 Message 入口",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "底部导航 Profile 入口",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    }
+  ],
+  "visionSummary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "blocking": false
+  },
+  "visionChecks": []
+}

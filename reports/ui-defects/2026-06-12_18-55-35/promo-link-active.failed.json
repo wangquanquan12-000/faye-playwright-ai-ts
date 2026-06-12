@@ -1,0 +1,54 @@
+{
+  "scene": "promo-link-active",
+  "testTitle": "UI-PROMO 各场景走查",
+  "status": "FAILED",
+  "checkedAt": "2026-06-12T10:55:58.705Z",
+  "summary": {
+    "total": 3,
+    "passed": 0,
+    "failed": 3
+  },
+  "checks": [
+    {
+      "element": "Claims 数值",
+      "check": "字重",
+      "expected": "特殊 UI 字型（Claims/Clicks/Revenue 下方数值，14px Heavy，design-refs/promo-link/promo-link-active.png） Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字重错误",
+      "severity": "Medium",
+      "id": "001"
+    },
+    {
+      "element": "Clicks 数值",
+      "check": "字重",
+      "expected": "特殊 UI 字型（Claims/Clicks/Revenue 下方数值，14px Heavy，design-refs/promo-link/promo-link-active.png） Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字重错误",
+      "severity": "Medium",
+      "id": "002"
+    },
+    {
+      "element": "Revenue 数值",
+      "check": "字重",
+      "expected": "特殊 UI 字型（Claims/Clicks/Revenue 下方数值，14px Heavy，design-refs/promo-link/promo-link-active.png） Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字重错误",
+      "severity": "Medium",
+      "id": "003"
+    }
+  ],
+  "visionSummary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "blocking": false
+  },
+  "visionChecks": []
+}

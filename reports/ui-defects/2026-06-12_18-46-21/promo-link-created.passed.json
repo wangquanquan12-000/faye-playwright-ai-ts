@@ -1,0 +1,165 @@
+{
+  "scene": "promo-link-created",
+  "testTitle": "UI-PROMO 各场景走查",
+  "status": "FAILED",
+  "checkedAt": "2026-06-12T10:46:41.048Z",
+  "summary": {
+    "total": 18,
+    "passed": 18,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "element": "页面背景",
+      "check": "颜色",
+      "expected": "Grey_01（#0D0D0D）",
+      "actual": "rgb(13, 13, 13)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Promo Link Created 标题",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Promo Link Created 标题",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Promo Link Created 标题",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir-Heavy",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Promo Link Created 标题",
+      "check": "字号",
+      "expected": "Type_01（20px）",
+      "actual": "19.9034px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Promo Link Created 标题",
+      "check": "字重",
+      "expected": "Type_01 Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Promo Link Created 标题",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(193x28) / client(193x28)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "生成的 Promo Link",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "生成的 Promo Link",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "生成的 Promo Link",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir-Light",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "生成的 Promo Link",
+      "check": "字号",
+      "expected": "特殊 UI 字型（金框内链接 URL，14px Book，design-refs/promo-link/promo-link-created.png）",
+      "actual": "13.9324px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "生成的 Promo Link",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(291x40) / client(291x40)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir-Heavy",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "字号",
+      "expected": "Type_02（16px）",
+      "actual": "15.9227px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "字重",
+      "expected": "Type_02 Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "主按钮渐变",
+      "expected": "Button_01 渐变（#460443 → #FE0127）",
+      "actual": "backgroundImage=linear-gradient(270deg, rgb(254, 1, 39), rgb(70, 4, 67))",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(316x46) / client(316x46)",
+      "status": "passed",
+      "mark": ""
+    }
+  ],
+  "visionSummary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "blocking": false
+  },
+  "visionChecks": []
+}

@@ -6,7 +6,8 @@ import {
   clearAuthStorage,
   dismissAgeGate,
   dismissPushNotification,
-  ensureCreatorAuthenticated,
+  ensureCreatorSession,
+  loginCreatorFresh,
   loginWithEmail,
   resetBrowserSession,
   saveAuthStorage,
@@ -37,17 +38,42 @@ async function loginViewerFresh(browser: Browser, email: string): Promise<string
   return file;
 }
 
+/** Worker 首次登录含发码冷却，需长于默认 test timeout */
+const WORKER_LOGIN_TIMEOUT_MS = 180_000;
+
+async function resolveCreatorStorage(browser: Browser): Promise<string> {
+  const file = authStoragePath('creator');
+  if (process.env.AUTH_REFRESH === '1' || !fs.existsSync(file)) {
+    console.log('Creator 登录态未缓存，worker 内执行首次登录…');
+    return loginCreatorFresh(browser);
+  }
+  console.log(`复用 Creator 登录态: ${file}`);
+  return file;
+}
+
 /**
- * Creator 业务测试 — 每次执行用例前清除缓存，重新确认 18+ 并登录，获取新 token。
- * 同一条用例内的 test.step 共享本次登录会话，不会重复登录。
+ * Creator 业务测试 — worker 内登录一次，复用 `.auth/creator.json`。
+ * 同 worker 后续用例不再重复发验证码；token 过期时 ensureCreatorSession 自动重登。
+ *
+ * 强制重新登录：AUTH_REFRESH=1 npm run test ...
  *
  * @example
  * import { creatorTest as test, expect } from '../../src/fixtures/auth-fixture';
  * test('Post 主流程', async ({ page }) => { ... });
  */
-export const creatorTest = base.extend({
+export const creatorTest = base.extend<{}, { workerCreatorStorage: string }>({
+  storageState: ({ workerCreatorStorage }, use) => use(workerCreatorStorage),
+
+  workerCreatorStorage: [
+    async ({ browser }, use) => {
+      const file = await resolveCreatorStorage(browser);
+      await use(file);
+    },
+    { scope: 'worker', timeout: WORKER_LOGIN_TIMEOUT_MS },
+  ],
+
   page: async ({ page }, use) => {
-    await ensureCreatorAuthenticated(page);
+    await ensureCreatorSession(page);
     await use(page);
   },
 });
@@ -64,11 +90,11 @@ export function createViewerTest(email: string) {
         const file = await loginViewerFresh(browser, email);
         await use(file);
       },
-      { scope: 'worker' },
+      { scope: 'worker', timeout: WORKER_LOGIN_TIMEOUT_MS },
     ],
   });
 }
 
 export { expect } from '@playwright/test';
 export { testData };
-export { ensureCreatorAuthenticated } from '../helpers/auth';
+export { ensureCreatorSession } from '../helpers/auth';

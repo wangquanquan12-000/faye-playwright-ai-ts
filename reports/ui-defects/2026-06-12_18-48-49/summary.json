@@ -1,0 +1,19 @@
+{
+  "runStamp": "2026-06-12_18-48-49",
+  "startedAt": "2026-06-12T10:49:09.408Z",
+  "scenes": {
+    "promo-link-new-default": {
+      "testTitle": "UI-PROMO 各场景走查",
+      "status": "PASSED",
+      "defectCount": 0,
+      "checkedAt": "2026-06-12T10:49:09.408Z"
+    },
+    "promo-link-created": {
+      "testTitle": "UI-PROMO 各场景走查",
+      "status": "FAILED",
+      "defectCount": 1,
+      "checkedAt": "2026-06-12T10:49:11.693Z"
+    }
+  },
+  "updatedAt": "2026-06-12T10:49:11.693Z"
+}

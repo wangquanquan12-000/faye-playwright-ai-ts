@@ -6,7 +6,7 @@ import { generateViewerEmail } from '../../src/fixtures/test-data';
 let registeredViewerEmail = '';
 const viewerSessionFile = authStoragePath('viewer-session');
 
-test.describe.serial('Viewer 登录注册', () => {
+test.describe.serial('@flow Viewer 登录注册', () => {
   test('AUTH-02 Viewer Email 注册主流程', async ({ page }) => {
     test.setTimeout(120_000);
     if (fs.existsSync(viewerSessionFile)) fs.unlinkSync(viewerSessionFile);

@@ -1,0 +1,32 @@
+{
+  "scene": "promo-link-created",
+  "testTitle": "UI-PROMO 各场景走查",
+  "status": "FAILED",
+  "checkedAt": "2026-06-12T10:50:57.978Z",
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1
+  },
+  "checks": [
+    {
+      "element": "生成的 Promo Link",
+      "check": "字重",
+      "expected": "特殊 UI 字型（金框内链接 URL，14px Book，design-refs/promo-link/promo-link-created.png） Book（font-weight: 400）",
+      "actual": "font-weight=700",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字重错误",
+      "severity": "Medium",
+      "id": "001"
+    }
+  ],
+  "visionSummary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "blocking": false
+  },
+  "visionChecks": []
+}

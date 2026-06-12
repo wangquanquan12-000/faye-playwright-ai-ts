@@ -1,0 +1,445 @@
+{
+  "scene": "promo-link-active",
+  "testTitle": "UI-PROMO 各场景走查",
+  "status": "FAILED",
+  "checkedAt": "2026-06-12T10:51:00.438Z",
+  "summary": {
+    "total": 53,
+    "passed": 53,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "element": "页面背景",
+      "check": "颜色",
+      "expected": "Grey_01（#0D0D0D）",
+      "actual": "rgb(13, 13, 13)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Active Tab",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Active Tab",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Active Tab",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Active Tab",
+      "check": "字号",
+      "expected": "Type_04（14px）",
+      "actual": "13.9324px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Active Tab",
+      "check": "字重",
+      "expected": "Type_04 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Active Tab",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(189x36) / client(189x36)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片主标题",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片主标题",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片主标题",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir-Light",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片主标题",
+      "check": "字重",
+      "expected": "Type_01 Heavy（font-weight: 800）",
+      "actual": "font-weight=700",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片主标题",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(348x20) / client(348x20)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片副标题",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片副标题",
+      "check": "颜色",
+      "expected": "Light_Yellow_02（#B39966）",
+      "actual": "rgb(179, 153, 102)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片副标题",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片副标题",
+      "check": "字重",
+      "expected": "Type_04 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "卡片副标题",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(348x16) / client(348x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 字段名",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 字段名",
+      "check": "颜色",
+      "expected": "Light_Yellow_03（#806D49）",
+      "actual": "rgb(128, 109, 73)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 字段名",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 字段名",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 字段名",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 字段名",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(36x16) / client(36x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 数值",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 数值",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 数值",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Claims 数值",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(46x20) / client(46x20)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 字段名",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 字段名",
+      "check": "颜色",
+      "expected": "Light_Yellow_03（#806D49）",
+      "actual": "rgb(128, 109, 73)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 字段名",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 字段名",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 字段名",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 字段名",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(31x16) / client(31x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 数值",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 数值",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 数值",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Clicks 数值",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(8x20) / client(8x20)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 字段名",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 字段名",
+      "check": "颜色",
+      "expected": "Light_Yellow_03（#806D49）",
+      "actual": "rgb(128, 109, 73)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 字段名",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 字段名",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 字段名",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 字段名",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(46x16) / client(46x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 数值",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 数值",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 数值",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Revenue 数值",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(35x20) / client(35x20)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir-Light",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "字号",
+      "expected": "特殊 UI 字型（卡片内描边 Copy Link 按钮文字，14px Heavy，design-refs/promo-link/promo-link-active.png）",
+      "actual": "13.9324px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "字重",
+      "expected": "特殊 UI 字型（卡片内描边 Copy Link 按钮文字，14px Heavy，design-refs/promo-link/promo-link-active.png） Heavy（font-weight: 800）",
+      "actual": "font-weight=700",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Copy Link 按钮",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(297x40) / client(297x40)",
+      "status": "passed",
+      "mark": ""
+    }
+  ],
+  "visionSummary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "blocking": false
+  },
+  "visionChecks": []
+}

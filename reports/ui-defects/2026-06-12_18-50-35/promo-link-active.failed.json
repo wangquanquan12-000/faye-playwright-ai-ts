@@ -1,0 +1,109 @@
+{
+  "scene": "promo-link-active",
+  "testTitle": "UI-PROMO 各场景走查",
+  "status": "FAILED",
+  "checkedAt": "2026-06-12T10:51:00.439Z",
+  "summary": {
+    "total": 8,
+    "passed": 0,
+    "failed": 8
+  },
+  "checks": [
+    {
+      "element": "卡片主标题",
+      "check": "字号",
+      "expected": "Type_01（20px）",
+      "actual": "13.9324px",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字体大小错误",
+      "severity": "High",
+      "id": "001"
+    },
+    {
+      "element": "卡片副标题",
+      "check": "字号",
+      "expected": "Type_04（14px）",
+      "actual": "11.942px",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字体大小错误",
+      "severity": "High",
+      "id": "002"
+    },
+    {
+      "element": "Claims 数值",
+      "check": "字号",
+      "expected": "Type_02（16px）",
+      "actual": "13.9324px",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字体大小错误",
+      "severity": "High",
+      "id": "003"
+    },
+    {
+      "element": "Claims 数值",
+      "check": "字重",
+      "expected": "Type_02 Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字重错误",
+      "severity": "Medium",
+      "id": "004"
+    },
+    {
+      "element": "Clicks 数值",
+      "check": "字号",
+      "expected": "Type_02（16px）",
+      "actual": "13.9324px",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字体大小错误",
+      "severity": "High",
+      "id": "005"
+    },
+    {
+      "element": "Clicks 数值",
+      "check": "字重",
+      "expected": "Type_02 Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字重错误",
+      "severity": "Medium",
+      "id": "006"
+    },
+    {
+      "element": "Revenue 数值",
+      "check": "字号",
+      "expected": "Type_02（16px）",
+      "actual": "13.9324px",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字体大小错误",
+      "severity": "High",
+      "id": "007"
+    },
+    {
+      "element": "Revenue 数值",
+      "check": "字重",
+      "expected": "Type_02 Heavy（font-weight: 800）",
+      "actual": "font-weight=400",
+      "status": "failed",
+      "mark": "🔴 FAILED",
+      "issue_type": "字重错误",
+      "severity": "Medium",
+      "id": "008"
+    }
+  ],
+  "visionSummary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "blocking": false
+  },
+  "visionChecks": []
+}

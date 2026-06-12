@@ -1,0 +1,365 @@
+{
+  "scene": "publish-form",
+  "testTitle": "UI-POST 发帖三页视觉走查",
+  "status": "PASSED",
+  "checkedAt": "2026-06-11T11:44:01.704Z",
+  "summary": {
+    "total": 43,
+    "passed": 43,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "element": "页面背景",
+      "check": "颜色",
+      "expected": "Grey_01（#0D0D0D）",
+      "actual": "rgb(13, 13, 13)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Image 入口",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Image 入口",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Image 入口",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Image 入口",
+      "check": "字号",
+      "expected": "Type_03（16px）",
+      "actual": "15.9227px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Image 入口",
+      "check": "字重",
+      "expected": "Type_03 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Image 入口",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(45x22) / client(45x22)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Video 入口",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Video 入口",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Video 入口",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Video 入口",
+      "check": "字号",
+      "expected": "Type_03（16px）",
+      "actual": "15.9227px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Video 入口",
+      "check": "字重",
+      "expected": "Type_03 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Video 入口",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(42x22) / client(42x22)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Everyone 访问标签",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Everyone 访问标签",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Everyone 访问标签",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Everyone 访问标签",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Everyone 访问标签",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Everyone 访问标签",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(51x16) / client(51x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Members 访问标签",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Members 访问标签",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Members 访问标签",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Members 访问标签",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Members 访问标签",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Members 访问标签",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(51x16) / client(51x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "PPV 访问标签",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "PPV 访问标签",
+      "check": "颜色",
+      "expected": "Light_Yellow_01（#FFDA91）",
+      "actual": "rgb(255, 218, 145)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "PPV 访问标签",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "PPV 访问标签",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "PPV 访问标签",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "PPV 访问标签",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(22x16) / client(22x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "访问权限说明文案",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "访问权限说明文案",
+      "check": "颜色",
+      "expected": "Light_Yellow_02（#B39966）",
+      "actual": "rgb(179, 153, 102)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "访问权限说明文案",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "访问权限说明文案",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "访问权限说明文案",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "访问权限说明文案",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(380x16) / client(380x16)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Upload Guide",
+      "check": "可见性",
+      "expected": "元素可见",
+      "actual": "元素可见",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Upload Guide",
+      "check": "颜色",
+      "expected": "Light_Yellow_03（#806D49）",
+      "actual": "rgb(128, 109, 73)",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Upload Guide",
+      "check": "字体",
+      "expected": "Avenir",
+      "actual": "Avenir",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Upload Guide",
+      "check": "字号",
+      "expected": "Type_08（12px）",
+      "actual": "11.942px",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Upload Guide",
+      "check": "字重",
+      "expected": "Type_08 Medium（font-weight: 500）",
+      "actual": "font-weight=400",
+      "status": "passed",
+      "mark": ""
+    },
+    {
+      "element": "Upload Guide",
+      "check": "文本溢出",
+      "expected": "无文本溢出/截断",
+      "actual": "scroll(257x19) / client(257x18)",
+      "status": "passed",
+      "mark": ""
+    }
+  ],
+  "visionSummary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "blocking": false
+  },
+  "visionChecks": []
+}

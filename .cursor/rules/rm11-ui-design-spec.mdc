@@ -1,0 +1,98 @@
+---
+description: RM11 UI 自动化分层与会话策略
+globs: tests/**/*.spec.ts,specs/**/*,design-refs/**/*
+alwaysApply: false
+---
+
+# 用例与视觉流程文档
+
+- 用例编写：`specs/case-writing-guide.md`
+- UI 图 → scene：`specs/ui-scene-workflow.md`
+- Scene 登记：`specs/ui-scenes.md`
+- UI 设计图目录：`design-refs/`
+- **元素 Token 映射（Post / Promo Link）**：`specs/rm11-ui-design-spec.md` §7
+- **已验证页面文案记忆**：`specs/verified-page-copy.md`
+
+## 生成视觉断言的判定原则（必须遵守）
+
+1. **UI 图优先**：生成视觉用例时，结合「视觉规范 + UI 图」共同判定。若我对页面文案的字号/颜色理解与 UI 图不一致，**一律以 UI 图为准**。
+2. **知识库纠偏**：发现规范默认与 UI 图/实测冲突时（例：Caption 字数统计实为 Light_Yellow_03、成功提示为 Light_Yellow_02 + Type_08、Caption 区块标题为 Type_03），**立即更新** `rm11-ui-design-spec.md` §7 与本规则，之后类似元素按更正后的映射处理。
+3. **无 UI 图时**：依据视觉规范 + 合理推断自行断言，并在用例/`ui-profiles.ts` 标注假设。
+4. **文案以实际截图为准**：所有文案严禁臆造；以项目实际截图（含 `error-context.md` 快照）为准。验证通过的页面，**必须**把确认的文案回写 `specs/verified-page-copy.md`，下次直接复用。
+5. **占位文案取样**：必须 `samplePlaceholderStyle: true`，读 `::placeholder`，禁止误读已输入文字色。
+6. **mobile icon 导航不要套文字规则**：移动端底部 Tab 只有 icon 时，只校验入口可见/可点击；不得套文字字号、文本溢出、左边缘一致等 desktop 侧栏规则。
+7. **Midscene 只做可选视觉辅助**：`UI_VISION=1` 时可执行 `vision.assertions`，结果写入 `visionChecks[]`；第一阶段不参与 hard fail，不替代 Token / CSS 确定性断言。
+8. **UI 图特殊字型禁止放宽**：UI 图提取的字号+字重在标准 Type_xx 中无对应时，登记 `RM11_UI_SPECIAL_TYPE`（§7.5），profile 用 `uiType` 引用；**禁止** `checkMinFontSize`、省略字重或仅校颜色绕过。
+
+## ⛔ 写断言前的硬门槛（未完成禁止写 ui-profiles）
+
+**禁止**从下方「速记表」或 §7.1 通用行直接抄 Token 到 profile。必须先完成 `specs/ui-scene-workflow.md` **步骤 ③½ 同页层级表**。
+
+对 **每一颗** 待断言文字，在 UI 图上回答：
+
+1. 它在**哪一层**？（页眉 / 卡片内 / 表单区块 / 弹窗内…）
+2. 与同页**相邻文字**谁大谁小？（必须写比较对象，如「小于页眉 Promo Link，大于 Claims 字段名」）
+3. 颜色跟谁是同一档？（01 / 02 / 03，不得凭「看起来像辅助字」）
+4. 标准 Type_xx 能否表达？不能 → **必须先**登记 `RM11_UI_SPECIAL_TYPE`，禁止放宽。
+
+## 常见误配（禁止再犯）
+
+| 错误做法 | 后果 | 正确做法 |
+|----------|------|----------|
+| 见金色粗体就用 **Type_01** | 卡片标题误报 20px | Type_01 **仅**页眉级：`Promo Link`、`New Promo Link`、`Post Details` 等 |
+| 见「标题」二字就用 Type_01/03 | 层级全错 | 卡片 Campaign Name ≠ 页面大标题；按 UI 图同页比较 |
+| 从 §7.1「正文/字段值」行抄 Type_04 | 与 UI 图 16px 区块标题混淆 | 以 **该页 UI 图 + §7.3 行** 为准 |
+| 实测与 UI 图冲突时改宽断言 | 假通过、掩盖真缺陷 | 以 UI 图为准；真实现偏差应 **失败并提 bug** |
+| 未跑通就先写一堆断言 | 反复返工 | 先层级表 → profile → 首跑 → 仅修 locator/锚点 |
+
+## 走查 Token 速记（仅作颜色/角色提示，不可替代层级表）
+
+| 元素 | 颜色 | 字号 |
+|------|------|------|
+| **页眉**大标题（全页最大那一行） | Light_Yellow_01 | Type_01 |
+| 内容标题 | Light_Yellow_01 | Type_03 |
+| 成功提示文案 | Light_Yellow_02 | Type_08 |
+| 媒体入口 Image 等 | Light_Yellow_01 | Type_03 |
+| Everyone/Members/PPV | Light_Yellow_01 | **Type_08** |
+| Post Details 区块标题（Caption/Send On 等） | Light_Yellow_01 | Type_03 |
+| 输入框外小标注 | Light_Yellow_01 | Type_06 |
+| 辅助说明 | Light_Yellow_02 | Type_08 |
+| 输入框右上角字数统计 | Light_Yellow_03 | Type_08 |
+| 占位符 | Light_Yellow_03 | Type_05 | 须 `samplePlaceholderStyle: true` |
+| 主按钮 Post/Generate Campaign | Light_Yellow_01 + Button_01 | Type_02 |
+
+# RM11 测试分层 & 登录态规则（默认）
+
+## 登录态（必须遵守）
+
+- **业务 / UI 用例**：使用 `creatorTest`，worker 内登录 **一次**，复用 `.auth/creator.json`
+- **禁止**每条用例 `clearAuthStorage` + 重新发验证码
+- **仅** `@flow` 登录/注册专用用例：`resetBrowserSession` + `loginWithEmail` / `registerViewer`
+- **Token 过期**：`ensureCreatorSession` 自动重登；`AUTH_REFRESH=1` 强制重登
+
+```ts
+import { creatorTest as test, expect } from '../../src/fixtures/auth-fixture';
+```
+
+## UI 视觉（@visual）
+
+- 目录：`tests/ui/`；`inspectXxxUi(page, testInfo)`
+- 同样使用 `creatorTest`，不要手写 `loginAsCreator`
+
+## 业务流程（@flow）
+
+- 目录：`tests/post/`、`tests/auth/`（非登录专测）等
+- 仅功能断言，不含全量 UI 走查
+
+```bash
+npm run test:flow      # @flow（默认 desktop chromium）
+npm run test:visual    # tests/ui/ @visual（mobile-chrome，对齐 UI 设计图）
+UI_VISION=1 npm run test:visual -- tests/ui/post.ui.spec.ts -g "Home 侧栏" # 开启 Midscene 视觉辅助
+AUTH_REFRESH=1 npm run test:flow -- ...  # 强制重新登录
+```
+
+## 视觉走查设备（重要）
+
+- `design-refs/` 内 UI 图均为 **移动端** 设计稿
+- **`@visual` 必须在 `mobile-chrome`（Pixel 7）执行**，勿用 desktop 视口对比移动端 UI 图
+- `@flow` 业务回归仍可用 desktop `chromium`

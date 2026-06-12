@@ -1,6 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { expect, type Page } from '@playwright/test';
+import { appNavigation } from './auth';
+import { waitForPageLoadingComplete } from './page-ready';
 
 export const TEST_MEDIA_DIR = path.join(process.cwd(), 'test-media');
 
@@ -21,14 +23,16 @@ const MEDIA_UPLOAD_TIMEOUT_ERROR =
   '媒体未上传完成：已超过 5 分钟等待时间，请检查网络状况或减小图片体积后重试';
 
 /**
- * 侧边栏发帖入口。
+ * 发帖入口：Desktop 侧栏文字 + Mobile 底部导航图标/链接。
  * UI 已从 Publish 更名为 Post；测试环境可能仍显示 Publish，故两者兼容。
  */
 export function navPostButton(page: Page) {
-  return page
-    .locator('nav')
-    .getByText(/^(Post|Publish)$/i)
-    .or(page.getByRole('navigation').getByText(/^(Post|Publish)$/i));
+  const nav = appNavigation(page);
+  const labelled = nav.getByText(/^(Post|Publish)$/i);
+  const publishHref = nav.locator('a[href*="/publish"], a[href*="publish"]');
+  // Mobile 底部导航第 3 项为发帖（Home、Notifications、发帖、Messages、Profile）
+  const mobileCompose = nav.locator(':scope > *').nth(2);
+  return labelled.or(publishHref).or(mobileCompose);
 }
 
 /** 列出 test-media 目录下可用图片文件 */
@@ -125,8 +129,12 @@ async function uploadImagesViaImageButton(page: Page, files: string[]): Promise<
 export async function openNewPostForm(page: Page): Promise<void> {
   await navPostButton(page).click();
   await page.waitForTimeout(1500);
-  await page.getByText('New Post', { exact: true }).click();
+  const newPost = page.getByText('New Post', { exact: true });
+  if (await newPost.isVisible({ timeout: 3000 }).catch(() => false)) {
+    await newPost.click();
+  }
   await page.waitForURL(/\/publish\?post_id=/, { timeout: 30_000 });
+  await waitForPageLoadingComplete(page);
 }
 
 /** 从 test-media 随机选取 1～9 张图片，点击 Image 按钮上传 */
@@ -294,7 +302,7 @@ export async function submitPost(page: Page): Promise<void> {
 /** 发布后停留在成功页，不会自动跳回 /home */
 export async function waitForPostPublishSuccess(page: Page): Promise<void> {
   await page.waitForURL(/\/publish\/success/, { timeout: 60_000 });
-  await page.getByText(/your media has been posted successfully/i).waitFor({
+  await page.getByText(/your (media|scheduel?).*(posted|set up) successfully/i).waitFor({
     state: 'visible',
     timeout: 15_000,
   });

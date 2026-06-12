@@ -5,6 +5,10 @@
   "scripts": {
     "postinstall": "PLAYWRIGHT_BROWSERS_PATH=./browsers npx playwright install chromium || true",
     "test": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test",
+    "test:flow": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test --grep @flow",
+    "test:visual": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test --grep @visual --project=mobile-chrome",
+    "auth:seed": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test tests/auth/seed-creator.spec.ts --project=chromium --retries=0",
+    "auth:seed:mobile": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test tests/auth/seed-creator.spec.ts --project=mobile-chrome --retries=0",
     "test:headed": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test --headed",
     "test:ui": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test --ui",
     "test:ai": "PLAYWRIGHT_BROWSERS_PATH=./browsers playwright test tests/ai/",
@@ -23,6 +27,7 @@
   ],
   "license": "ISC",
   "devDependencies": {
+    "@midscene/web": "^1.9.5",
     "@playwright/test": "^1.60.0",
     "dotenv": "^17.4.2"
   }
